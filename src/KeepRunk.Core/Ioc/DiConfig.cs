@@ -1,6 +1,6 @@
 ﻿using Autofac;
 
-namespace DMS.Framework.Ioc
+namespace KeepRunk.Core.Ioc
 {
     public static class DiConfig
     {

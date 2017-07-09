@@ -1,4 +1,4 @@
-﻿namespace DMS.Framework.Ioc
+﻿namespace KeepRunk.Core.Ioc
 {
     public class EngineContext
     {

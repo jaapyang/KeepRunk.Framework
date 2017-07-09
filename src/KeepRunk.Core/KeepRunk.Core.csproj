@@ -30,7 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.4.2.0\lib\net45\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
@@ -40,7 +47,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Extensions\DateTimeExtension.cs" />
     <Compile Include="Extensions\DoubleExtension.cs" />
     <Compile Include="Extensions\EnumExtensions.cs" />
@@ -50,10 +56,21 @@
     <Compile Include="Helps\IpHelper.cs" />
     <Compile Include="Helps\JsonData.cs" />
     <Compile Include="Helps\Md5Helper.cs" />
+    <Compile Include="Ioc\DiConfig.cs" />
+    <Compile Include="Ioc\EngineContext.cs" />
+    <Compile Include="Ioc\IDependency.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web\AjaxResponse.cs" />
+    <Compile Include="Web\CacheHelper.cs" />
+    <Compile Include="Web\ConfigHelper.cs" />
+    <Compile Include="Web\CookieHelper.cs" />
+    <Compile Include="Web\ResultCode.cs" />
+    <Compile Include="Web\SessionHelper.cs" />
+    <Compile Include="Web\UserConfiguration.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Ioc\" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
