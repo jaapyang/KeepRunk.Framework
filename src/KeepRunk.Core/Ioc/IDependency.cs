@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KeepRunk.Core
+namespace DMS.Framework.Ioc
 {
-    public class Class1
+    public interface IDependency
     {
     }
 }
