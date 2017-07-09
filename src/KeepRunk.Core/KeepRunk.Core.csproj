@@ -40,6 +40,7 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,6 +48,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dtos\IDtos.cs" />
+    <Compile Include="Entities\DeleteState.cs" />
+    <Compile Include="Entities\Entity.cs" />
+    <Compile Include="Entities\ICreateDate.cs" />
+    <Compile Include="Entities\IEntity.cs" />
+    <Compile Include="Entities\ILastUpdateDate.cs" />
+    <Compile Include="Entities\ISoftDelete.cs" />
+    <Compile Include="Entities\ISort.cs" />
     <Compile Include="Extensions\DateTimeExtension.cs" />
     <Compile Include="Extensions\DoubleExtension.cs" />
     <Compile Include="Extensions\EnumExtensions.cs" />
@@ -60,6 +69,8 @@
     <Compile Include="Ioc\EngineContext.cs" />
     <Compile Include="Ioc\IDependency.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitTest\TestBase.cs" />
+    <Compile Include="Web.Mvc\KeepRunkController.cs" />
     <Compile Include="Web\AjaxResponse.cs" />
     <Compile Include="Web\CacheHelper.cs" />
     <Compile Include="Web\ConfigHelper.cs" />
@@ -68,7 +79,9 @@
     <Compile Include="Web\SessionHelper.cs" />
     <Compile Include="Web\UserConfiguration.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Attributes\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
