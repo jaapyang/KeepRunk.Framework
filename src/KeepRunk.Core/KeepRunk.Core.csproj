@@ -43,7 +43,6 @@
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -52,13 +51,16 @@
     <Compile Include="Application\ApplicationService.cs" />
     <Compile Include="Application\IApplicationService.cs" />
     <Compile Include="Domain\DomainService.cs" />
+    <Compile Include="Dtos\EntityDto.cs" />
+    <Compile Include="Dtos\EntityDtoOfPrimaryKey.cs" />
+    <Compile Include="Dtos\IEntityDto.cs" />
     <Compile Include="Entities\Entity.cs" />
     <Compile Include="Repository\IRepository.cs" />
     <Compile Include="Repository\IRepositoryOfEntity.cs" />
     <Compile Include="Repository\RepositoryBase.cs" />
     <Compile Include="ServiceBase.cs" />
     <Compile Include="Domain\IDomainService.cs" />
-    <Compile Include="Dtos\IDtos.cs" />
+    <Compile Include="Dtos\IEntityDtoOfPrimaryKey.cs" />
     <Compile Include="Entities\DeleteState.cs" />
     <Compile Include="Entities\EntityOfPrimaryKey.cs" />
     <Compile Include="Entities\ICreateDate.cs" />
@@ -102,9 +104,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Attributes\" />
-    <Folder Include="EntityFramework\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
