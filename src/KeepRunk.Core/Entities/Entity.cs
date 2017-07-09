@@ -1,13 +1,12 @@
-﻿namespace KeepRunk.Core.Entities
-{
-    public class Entity<T> : IEntity
-        where T : struct
-    {
-        public virtual T Id { get; set; }
-    }
+using System;
+using System.ComponentModel.DataAnnotations;
 
-    public class Entity : Entity<int>
+namespace KeepRunk.Core.Entities
+{
+    [Serializable]
+    public abstract class Entity : Entity<int>
     {
+        [Key]
         public override int Id { get; set; }
     }
 }

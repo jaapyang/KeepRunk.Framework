@@ -5,7 +5,12 @@ using System.Threading.Tasks;
 
 namespace KeepRunk.Core.Entities
 {
-    public interface IEntity
+    public interface IEntity<TPrimaryKey>
+    {
+        TPrimaryKey Id { get; set; }
+    }
+
+    public interface IEntity:IEntity<int>
     {
     }
 }
