@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KeepRunk.DomainService
+namespace KeepRunk.Core.Application
 {
-    public class Class1
+    public interface IApplicationService
     {
     }
 }

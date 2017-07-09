@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KeepRunk.ApplicationService
+namespace KeepRunk.Core.Uow
 {
-    public interface IApplicationService
+    public interface IUnitOfWork
     {
     }
 }
