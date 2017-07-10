@@ -5,7 +5,7 @@ using KeepRunk.Core.Repository;
 
 namespace KeepRunk.EntityFramework
 {
-    public class EfReporsitory<TDbContext, TEntity, TPrimaryKey>
+    public class EfReporsitoryBase<TDbContext, TEntity, TPrimaryKey>
         : RepositoryBase<TEntity, TPrimaryKey>,IRepositoryWithDbContext
         where TEntity : class ,IEntity<TPrimaryKey>
         where TDbContext : DbContext

@@ -33,6 +33,12 @@
     <Reference Include="Autofac">
       <HintPath>..\packages\Autofac.4.2.0\lib\net45\Autofac.dll</HintPath>
     </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\packages\Castle.Core.3.3.0\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor">
+      <HintPath>..\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -50,11 +56,23 @@
   <ItemGroup>
     <Compile Include="Application\ApplicationService.cs" />
     <Compile Include="Application\IApplicationService.cs" />
+    <Compile Include="Configuration\IDictionaryBasedConfig.cs" />
+    <Compile Include="Dependency\ConventionalRegistrationContext.cs" />
+    <Compile Include="Dependency\IocManager.cs" />
+    <Compile Include="Dependency\ConventionalRegistrationConfig.cs" />
+    <Compile Include="Configuration\DictionaryBasedConfig.cs" />
+    <Compile Include="Dependency\DependencyLifeStyle.cs" />
+    <Compile Include="Dependency\IConventionalDependencyRegistrar.cs" />
+    <Compile Include="Dependency\IConventionalRegistrationContext.cs" />
+    <Compile Include="Dependency\IIocRegistrar.cs" />
+    <Compile Include="Dependency\IIocManager.cs" />
+    <Compile Include="Dependency\IIocResolver.cs" />
     <Compile Include="Domain\DomainService.cs" />
     <Compile Include="Dtos\EntityDto.cs" />
     <Compile Include="Dtos\EntityDtoOfPrimaryKey.cs" />
     <Compile Include="Dtos\IEntityDto.cs" />
     <Compile Include="Entities\Entity.cs" />
+    <Compile Include="Extensions\DictionaryExtensions.cs" />
     <Compile Include="Repository\IRepository.cs" />
     <Compile Include="Repository\IRepositoryOfEntity.cs" />
     <Compile Include="Repository\RepositoryBase.cs" />
